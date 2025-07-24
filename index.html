@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Golden - KPOP Demon Hunters</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nanum+Gothic&display=swap');
+
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+      font-family: 'Nanum Gothic', sans-serif;
+      color: #3a2e00;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+      border-bottom: 3px solid #fff8dc;
+    }
+
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      letter-spacing: 0.15em;
+      text-shadow: 0 0 10px #fffacd;
+      margin: 0;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+      backdrop-filter: blur(5px);
+    }
+
+    .intro {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+      text-shadow: 0 0 5px #fff8dc;
+    }
+
+    .lyric-highlight {
+      background: #fff8dc;
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 1.15rem;
+      margin: 2rem 0;
+      box-shadow: 0 0 15px #ffdf7e;
+      color: #b36b00;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      margin: 2rem 0;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 20px #ffae00;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+      border-radius: 15px;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #ffc107;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px #ffd54f;
+    }
+
+    footer {
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #6b4f00;
+      background: rgba(255, 255, 255, 0.15);
+      border-top: 3px solid #fff8dc;
+    }
+
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .gallery img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>G O L D E N</h1>
+  </header>
+
+  <main>
+    <p class="intro">KPOP Demon Hunters의 히트곡 "Golden" - 내면의 빛을 찾아 떠나는 여정</p>
+
+    <div class="lyric-highlight">
+      “I was a ghost, I was alone<br />
+      Now I'm shinin' like I'm born to be<br />
+      Gonna be golden”
+    </div>
+
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yebNIHKAC4A?si=UBL7GxcCjGdOkuGA&amp;controls=0&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <section class="gallery" aria-label="Golden 뮤직비디오 이미지 갤러리">
+      <img src="https://i.imgur.com/EXAMPLE1.jpg" alt="Golden 뮤직비디오 스틸컷 1" />
+      <img src="https://i.imgur.com/EXAMPLE2.jpg" alt="Golden 뮤직비디오 스틸컷 2" />
+      <img src="https://i.imgur.com/EXAMPLE3.jpg" alt="Golden 뮤직비디오 스틸컷 3" />
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Demon Hunters Fanpage | Designed by 준호
+  </footer>
+</body>
+</html>
